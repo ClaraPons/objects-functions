@@ -88,13 +88,51 @@
 
 // 07 - Password generation
 
-const generatePassword = (num) => { 
-    const min = 0
-    const max = num
+// let array = []
+// let letter = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
-    const random = Math.floor(Math.random() * max) + min
 
-    if (num < 6 || num >15){
-        return "error"
-    }
-}
+// const generatePassword = (num) => { 
+
+//     if (num < 6 || num > 15){
+//         console.log("error")
+//     } else {
+//         for (let i = 0; i < num; i++){
+//         const min = 0
+//         const max = letter.length
+//         const random = Math.floor(Math.random() * max) + min
+//         array[i] = letter[random] 
+       
+//     }
+//     return  array.join("")
+// }
+// }
+
+//  console.log(generatePassword(7))
+
+// 08 - Let’s play
+
+// const launchDice = (numberOfDice) => {
+//     let sum = 0 
+//     for(let i = 0; i < numberOfDice; i++){
+//         const min = 1
+//         const max = 6
+//         const random = Math.floor(Math.random() * max) + min
+//         sum += random
+//     }
+//     return sum
+// }
+
+// let player1 = launchDice(5)
+// let player2 = launchDice(5)
+
+// console.log(player1)
+// console.log(player2)
+
+// if (player1 > player2){
+//     console.log(`Player 1 is the winner ! score : ${player1}`)
+// }else if (player2 > player1){
+//     console.log(`Player 2 is the winner ! score : ${player2}`)
+// }else{
+//     console.log('There is no winner')
+// }
