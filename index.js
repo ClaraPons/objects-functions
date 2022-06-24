@@ -71,14 +71,15 @@
 // 06 - Time
 
 // const format = (num) => {
-//     let hours = Math.floor(num / 3600)  // une heure = 3600 sec
+//     let hours = Math.floor(num / 3600)  
+// une heure = 3600 sec
 //     let minutes = Math.floor((num % 3600) / 60) 
-//     // enlève une heure (3600) donc reste 100 a prendre pour les minutes 
-//     // une minute = 60 sec
-//     // donc prendre le reste de num et diviser par 60 
+// enlève une heure (3600) donc reste 100 a prendre pour les minutes 
+// une minute = 60 sec
+// donc prendre le reste de num et diviser par 60 
 //     let sec = Math.floor(100 % 60)
-//     // on enlève 60minutes pour prendre le reste en sec: 40 
-//     //prendre le reste de 100 par rapport à 60 pour prendre les sec (1min = 60s)
+// on enlève 60minutes pour prendre le reste en sec: 40 
+// prendre le reste de 100 par rapport à 60 pour prendre les sec (1min = 60s)
 //     return `${hours} : ${minutes} : ${sec}`
 // }
 
@@ -87,11 +88,13 @@
 
 // 07 - Password generation
 
-
 const generatePassword = (num) => { 
     const min = 0
     const max = num
 
     const random = Math.floor(Math.random() * max) + min
 
+    if (num < 6 || num >15){
+        return "error"
+    }
 }
