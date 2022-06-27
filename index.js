@@ -23,11 +23,10 @@
 
 // let cats = [cat, cat2]
 
-// console.log(cat.age)
-// console.log(cat["age"])
+// console.log(cats[0].age)
+// console.log(cats[0]["age"])
 
-// console.log(cat2.isCute)
-// console.log(cat2["isCute"])
+// console.log(cats[1].isCute)
 
 // 03 - Even
 
@@ -46,10 +45,12 @@
 
 // const compare = (x,y) => {
 //     if (x > y){
-//         return "X is bigger"
+//         return "${x} is bigger"
+//     } else if (y > x){
+//         return "${y} is bigger"
 //     } else{
-//         return "Y is bigger"
-//     }
+//          return "Both are the same"
+//  }
 // }
 
 // const result = compare(10,60)
@@ -71,13 +72,14 @@
 // 06 - Time
 
 // const format = (num) => {
-//     let hours = Math.floor(num / 3600)  
+// let secondsInHour = 3600    
+// let hours = Math.floor(num / secondsInHour)  
 // une heure = 3600 sec
-//     let minutes = Math.floor((num % 3600) / 60) 
+//     let minutes = Math.floor((num % secondsInHour) / 60) 
 // enlève une heure (3600) donc reste 100 a prendre pour les minutes 
 // une minute = 60 sec
 // donc prendre le reste de num et diviser par 60 
-//     let sec = Math.floor(100 % 60)
+//     let sec = Math.floor((num % secondsInHour) % 60)
 // on enlève 60minutes pour prendre le reste en sec: 40 
 // prendre le reste de 100 par rapport à 60 pour prendre les sec (1min = 60s)
 //     return `${hours} : ${minutes} : ${sec}`
@@ -109,6 +111,26 @@
 // }
 
 //  console.log(generatePassword(7))
+
+// AUTRE METHODE
+
+// const generatePasword = num => {
+//     let password = ""
+    
+//     if (num < 6 || num > 15){
+//         console.log("error")
+//     } else {
+//     for (let i = 0; i < num ; i++){
+//         const min = 65
+//         const max = 90 - min + 1
+//         const random = Math.floor(Math.random() * max) + min
+//         password += String.fromCharCode(random)
+//     }
+//     console.log(password)
+// }
+
+// generatePasword(8)
+
 
 // 08 - Let’s play
 
